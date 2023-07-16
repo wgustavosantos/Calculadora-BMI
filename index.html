@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styles-mobile.css">
-
+    <link rel="icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>BMI - Calculator</title>
 </head>
 
@@ -27,17 +27,18 @@
         <h2>Insira seus dados abaixo</h2>
         <p>Altura</p>
         <div class="altura">
-            <input type="number" id="" placeholder="0">
+            <input type="number" id="input_altura" placeholder="0">
             <span>cm</span>
         </div>
         <p>Peso</p>
         <div class="peso">
-            <input type="number" id="" placeholder="0">
+            <input type="number" id="input_peso" placeholder="0">
             <span>Kg</span>
         </div>
         <div class="bmi__resultado">
-            <h3>Bem vindo</h3>
-            <p>Digite sua altura e peso e você verá seu resultado de IMC aqui</p>
+            <h3 id="resultado__texto">Bem vindo</h3>
+            <p id="resultado__valor"></p>
+            <p id="resultado__detalhes">Digite sua altura e peso e você verá seu resultado de IMC aqui</p>
         </div>
     </div>
     <article class="container__sobre">
@@ -127,6 +128,8 @@
             <p>Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira clínica.</p>
         </div>
     </article>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
