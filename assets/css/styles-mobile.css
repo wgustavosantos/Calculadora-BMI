@@ -8,7 +8,7 @@
     width: 100%;
     text-align: center;
     padding: 1em 1.5em;
-    margin-bottom: 110%;
+    margin-bottom: 80%;
 }
 
 .container-bmi h1 {
@@ -65,20 +65,24 @@
     border: none;
     width: 100%;
     height: 5vh;
-    font-size: 1.8em;
+    font-size: 3em;
     font-weight: 700;
     opacity: 0.7;
     
 }
 
 .altura input::placeholder, .peso input::placeholder {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
     align-items: center;
 }
 
 .altura input:focus, .peso input:focus {
     outline: none;
+}
+
+.resultado__invalido {
+    color: #e45d5d;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -101,13 +105,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .bmi__resultado p {
     color: #ffffff;
-    font-size: em;
+    font-size: 1em;
 }
 
 .bmi__resultado p:nth-child(2) {
     font-size: 3em;
     font-weight: 700;
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 
 /*TEXTOS DO SITE*/
@@ -129,7 +133,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /*DICAS*/
 
 .container__dicas {
-    background: linear-gradient(to bottom, hsla(216, 95%, 92%, 30%), hsla(216, 95%, 92%, 0.15));
+    background: linear-gradient(to bottom, hsla(216, 95%, 92%, 30%), hsla(216, 95%, 92%, 0.05));
     width: 100%;
     padding: 3em 1.5em;
 }
@@ -146,6 +150,9 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 700;
 }
 
+.dicas__card img {
+    margin-top: 3em;
+}
 /*LIMITACOES DO IMC*/
 
 .container__bmi__limitacoes{
@@ -156,7 +163,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .container__bmi__limitacoes h2 {
     font-weight: 700;
     font-size: 1.8em;
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
 
 /*CARDS DE INFORMACOES*/
