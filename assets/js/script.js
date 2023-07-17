@@ -71,10 +71,10 @@ altura.addEventListener('input', function(event) {
   }
 
   var imcs = [
-    "Seu IMC sugere que você está abaixo do peso ideal. Seu peso está entre ",
-    "Seu IMC sugere que você tem um peso saudável. Seu peso ideal está entre ",
-    "Seu IMC sugere que você está acima do peso. Seu peso ideal está entre ",
-    "Seu IMC sugere que você é obeso. Seu peso ideal está entre ",
+    "Seu IMC sugere que você está abaixo do peso ideal.",
+    "Seu IMC sugere que você tem um peso saudável.",
+    "Seu IMC sugere que você está acima do peso.",
+    "Seu IMC sugere que você é obeso.",
     "Informe valores válidos."
   ]
 

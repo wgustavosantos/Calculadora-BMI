@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styles-mobile.css">
+    <link rel="stylesheet" href="assets/css/styles-tablet.css">
     <link rel="icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>BMI - Calculator</title>
 </head>
 
 <body>
     <section class="container-bmi">
-        <div class="bmi__texto">
             <img src="assets/img/logo.svg" alt="">
             <h1>
                 Calculadora de índice de massa corporal
@@ -20,20 +20,21 @@
             <p>Entenda melhor seu peso em relação à sua altura usando nossa calculadora de índice de massa corporal
                 (BM). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida
                 valioso para avaliar sua saúde e bem-estar geral.</p>
-        </div>
-
+        
     </section>
     <div class="bmi__calculo">
         <h2>Insira seus dados abaixo</h2>
-        <p>Altura</p>
-        <div class="altura">
-            <input type="number" id="input_altura" placeholder="0">
-            <span>cm</span>
-        </div>
-        <p>Peso</p>
-        <div class="peso">
-            <input type="number" id="input_peso" placeholder="0">
-            <span>Kg</span>
+        <div class="calculo__medidas">
+            <p>Altura</p>
+            <div class="altura">
+                <input type="number" id="input_altura" placeholder="0">
+                <span>cm</span>
+            </div>
+            <p>Peso</p>
+            <div class="peso">
+                <input type="number" id="input_peso" placeholder="0">
+                <span>Kg</span>
+            </div>
         </div>
         <div class="bmi__resultado">
             <h3 id="resultado__texto">Bem vindo</h3>
