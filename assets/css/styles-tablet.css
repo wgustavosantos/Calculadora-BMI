@@ -1,5 +1,64 @@
 @media screen and (min-width: 768px){
-    .calculo__medidas {
-        display: flex ;
+
+    .container-bmi {
+        height: 550px;
+    }
+     .container-bmi p {
+        margin: 2em auto;
+        max-width: 768px;
+    }
+
+    .bmi__calculo {
+        margin: -250px auto 0 auto;
+        max-width: 690px;
+    }
+
+    .container__sobre {
+        max-width: 768px;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .container__sobre img {
+        height: 400px;
+    }
+
+    .container__dicas {
+        max-width: 768px;
+        border-radius: 2.2rem;
+    }
+
+    .dicas__card {
+        flex-direction: row;
+        align-items: center;
+        margin: 2em 0;
+    }
+
+    .dicas__card img {
+        margin: 0; /*zerando margem*/
+    }
+
+    .card__texto h3 {
+        margin-bottom: 1em;
+    }
+
+    .container__informacoes{
+        padding: 0 1.5em;
+        max-width: 768px;
+    }
+
+    .container__informacoes__cards {
+        padding: 0 1.5em;
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5em;
+    }
+
+    .informacoes__cards {
+        width: 45%;
+        margin: 0 1em 1em 0;
     }
 }

@@ -13,27 +13,31 @@
 
 <body>
     <section class="container-bmi">
-            <img src="assets/img/logo.svg" alt="">
-            <h1>
-                Calculadora de índice de massa corporal
-            </h1>
-            <p>Entenda melhor seu peso em relação à sua altura usando nossa calculadora de índice de massa corporal
-                (BM). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida
-                valioso para avaliar sua saúde e bem-estar geral.</p>
-        
+        <img src="assets/img/logo.svg" alt="">
+        <h1>
+            Calculadora de índice de massa corporal
+        </h1>
+        <p>Entenda melhor seu peso em relação à sua altura usando nossa calculadora de índice de massa corporal
+            (BM). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida
+            valioso para avaliar sua saúde e bem-estar geral.</p>
+
     </section>
     <div class="bmi__calculo">
         <h2>Insira seus dados abaixo</h2>
         <div class="calculo__medidas">
-            <p>Altura</p>
-            <div class="altura">
-                <input type="number" id="input_altura" placeholder="0">
-                <span>cm</span>
+            <div class="medida__altura-peso">
+                <p>Altura</p>
+                <div class="altura">
+                    <input type="number" id="input_altura" placeholder="0">
+                    <span>cm</span>
+                </div>
             </div>
-            <p>Peso</p>
-            <div class="peso">
-                <input type="number" id="input_peso" placeholder="0">
-                <span>Kg</span>
+            <div class="medida__altura-peso">
+                <p>Peso</p>
+                <div class="peso">
+                    <input type="number" id="input_peso" placeholder="0">
+                    <span>Kg</span>
+                </div>
             </div>
         </div>
         <div class="bmi__resultado">
@@ -57,79 +61,99 @@
     <article class="container__dicas">
         <div class="dicas__card">
             <img src="assets/img/icon-eating.svg">
-            <h3>
-                Alimentação saudável
-            </h3>
-            <p class="dicas__texto">
-                A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade,
-                clareza mental e humor.
-            </p>
+            <div class="card__texto">
+                <h3>
+                    Alimentação saudável
+                </h3>
+                <p class="dicas__texto">
+                    A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade,
+                    clareza mental e humor.
+                </p>
+            </div>
         </div>
         <div class="dicas__card">
             <img src="assets/img/icon-exercise.svg">
-            <h3>
-                Atividade física regular
-            </h3>
-            <p class="dicas__texto">
-                O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o risco
-                de doenças, promovendo o bem-estar e a longevidade.
-            </p>
+            <div class="card__texto">
+                <h3>
+                    Atividade física regular
+                </h3>
+                <p class="dicas__texto">
+                    O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o
+                    risco
+                    de doenças, promovendo o bem-estar e a longevidade.
+                </p>
+            </div>
         </div>
         <div class="dicas__card">
             <img src="assets/img/icon-sleep.svg">
-            <h3>
-                Sono adequado
-            </h3>
-            <p class="dicas__texto">
-                O sono aumenta a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo restauração e
-                rejuvenescimento geral.
-            </p>
+            <div class="card__texto">
+                <h3>
+                    Sono adequado
+                </h3>
+                <p class="dicas__texto">
+
+                    O sono aumenta a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo
+                    restauração e
+                    rejuvenescimento geral.
+                </p>
+            </div>
         </div>
     </article>
-    <article class="container__bmi__limitacoes">
-        <h2>Limitações do IMC</h2>
-        <p>Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as
-            pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a
-            medição pode não ser benéfica.</p>
-    </article>
+
     <article class="container__informacoes">
-        <div class="informacoes__cards">
-            <div class="card__icon">
-                <img src="assets/img/icon-gender.svg">
-                <h3>Gênero</h3>
+        <article class="container__bmi__limitacoes">
+            <h2>Limitações do IMC</h2>
+            <p>Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as
+                pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a
+                medição pode não ser benéfica.</p>
+        </article>
+        <div class="container__informacoes__cards">
+            <div class="informacoes__cards">
+                <div class="card__icon">
+                    <img src="assets/img/icon-gender.svg">
+                    <h3>Gênero</h3>
+                </div>
+                <p>O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade.
+                    Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
             </div>
-            <p>O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
-        </div>
-        <div class="informacoes__cards">
-            <div class="card__icon">
-                <img src="assets/img/icon-age.svg">
-                <h3>Idade</h3>
+            <div class="informacoes__cards">
+                <div class="card__icon">
+                    <img src="assets/img/icon-age.svg">
+                    <h3>Idade</h3>
+                </div>
+                <p>Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC
+                    subestime o conteúdo de gordura corporal.</p>
             </div>
-            <p>Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC subestime o conteúdo de gordura corporal.</p>
-        </div>
-        <div class="informacoes__cards">
-            <div class="card__icon">
-                <img src="assets/img/icon-muscle.svg">
-                <h3>Músculo</h3>
+            <div class="informacoes__cards">
+                <div class="card__icon">
+                    <img src="assets/img/icon-muscle.svg">
+                    <h3>Músculo</h3>
+                </div>
+                <p>O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não
+                    diferencia
+                    músculo de gordura.</p>
             </div>
-            <p>O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não diferencia músculo de gordura.</p>
-        </div>
-        <div class="informacoes__cards">
-            <div class="card__icon">
-                <img src="assets/img/icon-pregnancy.svg">
-                <h3>Gravidez</h3>
+            <div class="informacoes__cards">
+                <div class="card__icon">
+                    <img src="assets/img/icon-pregnancy.svg">
+                    <h3>Gravidez</h3>
+                </div>
+                <p>As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez
+                    saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
             </div>
-            <p>As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
-        </div>
-        <div class="informacoes__cards">
-            <div class="card__icon">
-                <img src="assets/img/icon-race.svg">
-                <h3>Corrida</h3>
+            <div class="informacoes__cards">
+                <div class="card__icon">
+                    <img src="assets/img/icon-race.svg">
+                    <h3>Corrida</h3>
+                </div>
+                <p>Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais
+                    baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou
+                    enfermeira clínica.</p>
             </div>
-            <p>Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira clínica.</p>
         </div>
+
     </article>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
 
