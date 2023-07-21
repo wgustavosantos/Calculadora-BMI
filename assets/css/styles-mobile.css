@@ -202,7 +202,11 @@ input[type="number"]::-webkit-outer-spin-button {
 line-height: 1.3em;
 }
 
-.container-curva {
+.container-curva-left {
+    display: none;
+}
+
+.container-curva-right {
     display: none;
 }
 

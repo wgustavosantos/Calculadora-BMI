@@ -41,13 +41,13 @@
         border-radius: 0 110px 110px 0;
     }
 
-    .container-curva {
+    .container-curva-left {
         display: flex;
         max-width: 1280px;
         margin: 0 9em;
     }
 
-    .container-curva img {
+    .container-curva-left img {
         margin-left: auto;
     }
 
@@ -81,6 +81,7 @@
 
     .container__informacoes, .container__informacoes__cards {
         max-width: 1280px;
+        gap: 1em;
     }
 
     .informacoes__cards {
@@ -104,6 +105,17 @@
 
     .container__bmi__limitacoes h2 {
         margin: 0 0 1em 0;
+    }
+
+    .desktop-2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container-curva-right {
+        display: flex;
+        margin-right: 10em;
+        margin-top: -1em;
     }
 
 }
