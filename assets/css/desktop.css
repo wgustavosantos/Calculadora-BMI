@@ -1,0 +1,109 @@
+@media screen and (min-width: 1280px){
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container-bmi {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .bmi__titulo {
+        height: 100%;
+        margin: 5em;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: left;
+    }
+
+    .bmi__titulo h1 {
+        margin-top: 2em;
+    }
+
+    .container-bmi img {
+        height: 80px;
+        width: 80px;
+        margin: 0 auto 0 0;
+    }
+
+    .bmi__calculo {
+        margin-left: -200px;
+        margin-right: 20vh;
+        height: auto;
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .bmi__resultado {
+        border-radius: 0 110px 110px 0;
+    }
+
+    .container-curva {
+        display: flex;
+        max-width: 1280px;
+        margin: 0 9em;
+    }
+
+    .container-curva img {
+        margin-left: auto;
+    }
+
+    .container__sobre {
+        max-width: 1280px;
+        padding: 0 4em;
+        margin: -3em 0 5em 0em;
+    }
+
+    .container__sobre img {
+        height: 400px;
+    }
+
+    .container__sobre__texto {
+        padding: 0 6em;
+    }
+
+    .container__dicas {
+        max-width: 1280px;
+        padding: 0 4em;
+        display: flex;
+
+        
+    }
+
+    .dicas__card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1em;
+    }
+
+    .container__informacoes, .container__informacoes__cards {
+        max-width: 1280px;
+    }
+
+    .informacoes__cards {
+        width: 30%;
+    }
+    
+
+    .desktop-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-right: 10em;
+    }
+
+    .container__bmi__limitacoes {
+        margin: 0;
+        width: 60%;
+        max-width: none;
+        text-align: start;
+    }
+
+    .container__bmi__limitacoes h2 {
+        margin: 0 0 1em 0;
+    }
+
+}

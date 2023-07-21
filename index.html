@@ -7,44 +7,53 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styles-mobile.css">
     <link rel="stylesheet" href="assets/css/styles-tablet.css">
+    <link rel="stylesheet" href="assets/css/desktop.css">
     <link rel="icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>BMI - Calculator</title>
 </head>
 
 <body>
-    <section class="container-bmi">
-        <img src="assets/img/logo.svg" alt="">
-        <h1>
-            Calculadora de índice de massa corporal
-        </h1>
-        <p>Entenda melhor seu peso em relação à sua altura usando nossa calculadora de índice de massa corporal
-            (BM). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida
-            valioso para avaliar sua saúde e bem-estar geral.</p>
-
+    <section class="container">
+        <section class="container-bmi">
+            <div class="bmi__titulo">
+                <img src="assets/img/logo.svg" alt="">
+                <h1>
+                    Calculadora de índice de massa corporal
+                </h1>
+                <p>Entenda melhor seu peso em relação à sua altura usando nossa calculadora de índice de massa corporal
+                    (BM). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de
+                    partida
+                    valioso para avaliar sua saúde e bem-estar geral.
+                </p>
+            </div>
+        </section>
+        <div class="bmi__calculo">
+            <h2>Insira seus dados abaixo</h2>
+            <div class="calculo__medidas">
+                <div class="medida__altura-peso">
+                    <p>Altura</p>
+                    <div class="altura">
+                        <input type="number" id="input_altura" placeholder="0">
+                        <span>cm</span>
+                    </div>
+                </div>
+                <div class="medida__altura-peso">
+                    <p>Peso</p>
+                    <div class="peso">
+                        <input type="number" id="input_peso" placeholder="0">
+                        <span>Kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bmi__resultado">
+                <h3 id="resultado__texto">Bem vindo</h3>
+                <p id="resultado__valor"></p>
+                <p id="resultado__detalhes">Digite sua altura e peso e você verá seu resultado de IMC aqui</p>
+            </div>
+        </div>
     </section>
-    <div class="bmi__calculo">
-        <h2>Insira seus dados abaixo</h2>
-        <div class="calculo__medidas">
-            <div class="medida__altura-peso">
-                <p>Altura</p>
-                <div class="altura">
-                    <input type="number" id="input_altura" placeholder="0">
-                    <span>cm</span>
-                </div>
-            </div>
-            <div class="medida__altura-peso">
-                <p>Peso</p>
-                <div class="peso">
-                    <input type="number" id="input_peso" placeholder="0">
-                    <span>Kg</span>
-                </div>
-            </div>
-        </div>
-        <div class="bmi__resultado">
-            <h3 id="resultado__texto">Bem vindo</h3>
-            <p id="resultado__valor"></p>
-            <p id="resultado__detalhes">Digite sua altura e peso e você verá seu resultado de IMC aqui</p>
-        </div>
+    <div class="container-curva">
+        <img src="assets/img/pattern-curved-line-left.svg" alt="">
     </div>
     <article class="container__sobre">
         <img src="assets/img/image-man-eating.webp">
@@ -101,37 +110,49 @@
     </article>
 
     <article class="container__informacoes">
-        <article class="container__bmi__limitacoes">
-            <h2>Limitações do IMC</h2>
-            <p>Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as
-                pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a
-                medição pode não ser benéfica.</p>
-        </article>
+
+
         <div class="container__informacoes__cards">
-            <div class="informacoes__cards">
-                <div class="card__icon">
-                    <img src="assets/img/icon-gender.svg">
-                    <h3>Gênero</h3>
+            <div class="desktop-1">
+                <article class="container__bmi__limitacoes">
+                    <h2>Limitações do IMC</h2>
+                    <p>Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para
+                        todas
+                        as
+                        pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos
+                        casos, a
+                        medição pode não ser benéfica.</p>
+                </article>
+                <div class="informacoes__cards">
+                    <div class="card__icon">
+                        <img src="assets/img/icon-gender.svg">
+                        <h3>Gênero</h3>
+                    </div>
+                    <p>O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade.
+                        Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
                 </div>
-                <p>O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade.
-                    Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
             </div>
-            <div class="informacoes__cards">
-                <div class="card__icon">
-                    <img src="assets/img/icon-age.svg">
-                    <h3>Idade</h3>
+            <div class="desktop-2">
+                <div class="container-curva">
+                    <img src="assets/img/pattern-curved-line-right.svg" alt="">
                 </div>
-                <p>Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC
-                    subestime o conteúdo de gordura corporal.</p>
-            </div>
-            <div class="informacoes__cards">
-                <div class="card__icon">
-                    <img src="assets/img/icon-muscle.svg">
-                    <h3>Músculo</h3>
+                <div class="informacoes__cards">
+                    <div class="card__icon">
+                        <img src="assets/img/icon-age.svg">
+                        <h3>Idade</h3>
+                    </div>
+                    <p>Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC
+                        subestime o conteúdo de gordura corporal.</p>
                 </div>
-                <p>O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não
-                    diferencia
-                    músculo de gordura.</p>
+                <div class="informacoes__cards">
+                    <div class="card__icon">
+                        <img src="assets/img/icon-muscle.svg">
+                        <h3>Músculo</h3>
+                    </div>
+                    <p>O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não
+                        diferencia
+                        músculo de gordura.</p>
+                </div>
             </div>
             <div class="informacoes__cards">
                 <div class="card__icon">
